@@ -6,7 +6,7 @@ import librosa
 import matplotlib.pyplot as plt
 
 
-def convert_mp3_to_wav(fname):
+def convert_wav_to_mp3(fname):
 
     fname = os.path.splitext(os.path.basename(fname))[0]
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # 変換
-    convert_mp3_to_wav(args.fname)
+    convert_wav_to_mp3(args.fname)
 
     # 確認
     confirm_convert(args.fname)
